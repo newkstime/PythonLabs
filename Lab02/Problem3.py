@@ -1,0 +1,6 @@
+meal_total = float(input("Enter the cost of the food:"))
+sales_tax = float(format((meal_total * 0.07), '.2f'))
+tip = float(format((meal_total * 0.18), '.2f'))
+print("Your sales tax is $", sales_tax)
+print("Your tip amount is $", tip)
+print("Your total is $", format((meal_total + sales_tax + tip), '.2f'))
