@@ -1,16 +1,16 @@
 hour = int(input("Please enter the hour:"))
-while hour > 12:
+while hour > 12 or hour < 0:
     print("Invalid value for hours.")
     print("Please enter hours in 12 hour format.")
     hour = int(input("Please enter the hours:"))
 
 minutes = int(input("Please enter the minutes:"))
-while minutes > 60:
+while minutes > 60 or minutes < 0:
     print("Invalid value for minutes:")
     minutes = int(input("Please enter the minutes:"))
 
 seconds = int(input("Please enter the seconds:"))
-while seconds > 60:
+while seconds > 60 or seconds < 0:
     print("Invalid value for seconds:")
     seconds = int(input("Please enter the seconds:"))
 
